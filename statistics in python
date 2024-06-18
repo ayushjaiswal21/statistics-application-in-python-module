@@ -1,0 +1,23 @@
+import pandas as pd
+import numpy as np 
+import statistics 
+import scipy.stats as stats
+df=pd.read_excel(r"C:\Users\pc\Desktop\pdf for workshop\bookrating.xlsx")
+print(df.head())
+print(df.info())
+print(df.shape)
+
+print(df.describe())
+print(df['auther'=='jk'])
+print(df['auther'.unique()])
+print(df['average_rating'].mean())
+print(df['average_rating'].median())
+print(df['average_rating'].mode())
+print(statistics.stdev(df['price']))#standard deviation
+print(statistics.variance(df['average_rating']))#varience
+q3,q1=np.percentile(df['average_rating'],[75,25])
+print(q3,q1)
+iqr=q3-q1
+print(stats.zscore(df['average_rating']))
+#coffiecient of corelation
+print(df.corr(method='pearson'))
