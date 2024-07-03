@@ -1,4 +1,2 @@
-# it's the file where all the work will happen
-now i am starting by nameing it 
-my name is ayush jaiswal 
-i am persuing btech in cse
+# it's the file where all the work related to python and it's module will be seen 
+
