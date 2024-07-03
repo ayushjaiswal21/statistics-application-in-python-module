@@ -21,3 +21,7 @@ iqr=q3-q1
 print(stats.zscore(df['average_rating']))
 #coffiecient of corelation
 print(df.corr(method='pearson'))
+#replace using mean(),median(),mode()
+a=df['sold'].mean()
+df['sold'].fillna(a,inplace=True)
+print(df)
