@@ -1,4 +1,2 @@
-# it's the file where all the work will happen
-now i am starting by nameing it 
-my name is ayush jaiswal 
-i am persuing btech in cse
+#  It is just a practise file where i use to practise my functions and module related to statistics 
+
